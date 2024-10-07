@@ -42,7 +42,7 @@ body {
   width: 90%;
   padding: 12px;
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   margin-left: 16px;
   border: 1px solid #c0c5d7;
   border-radius: 5px;
@@ -62,7 +62,9 @@ body {
 }
 
 .checkbox-list label {
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
   font-size: 16px;
 }
 
