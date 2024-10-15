@@ -16,6 +16,7 @@ body {
 .modal {
   background-color: #322e59;
   max-width: 480px;
+   width: 90%;
   border-radius: 60px;
   padding: 20px;
   position: relative;
