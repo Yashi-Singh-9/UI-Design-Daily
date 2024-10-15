@@ -25,7 +25,7 @@ body {
   background-color: #ffffff;
   border-radius: 24px;
   padding: 20px;
-  max-width: 300px;
+  max-width: 340px;
   width: 90%;
   box-shadow: -20px -30px #ccd5f9;
 }
@@ -70,11 +70,11 @@ body {
 
 .crypto-item {
   display: flex;
+  width: 300px;
   justify-content: space-between;
   padding: 15px;
   cursor: pointer;
   margin: 0 auto;
-  margin-left: -28px;
   transition: background-color 0.3s ease;
 }
 
@@ -129,13 +129,14 @@ body {
 
   .crypto-item {
     flex-direction: column;
-    margin-left: 0;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .icon {
     margin-bottom: 8px;
   }
-  
+
   .heart {
     align-self: flex-end;
     font-size: 16px;
