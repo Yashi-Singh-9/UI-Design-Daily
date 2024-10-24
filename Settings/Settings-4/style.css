@@ -51,7 +51,6 @@ input[type="checkbox"] {
   font-size: 1.1rem;
 }
 
-/* Style the select dropdown */
 .location-container #location-select {
   margin-top: 20px;
   border-radius: 8px;
@@ -60,10 +59,10 @@ input[type="checkbox"] {
   max-width: 320px;
   width: 98%;
   background-color: #fff;
-  color: #0c1840; /* Updated text color */
+  color: #0c1840; 
   padding: 10px;
   font-size: 1.1rem;
-  appearance: none; /* Removes default browser dropdown styling */
+  appearance: none; 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%230c1840' d='M5 6L0 0h10L5 6z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 15px center;
@@ -71,62 +70,60 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Style for individual dropdown options */
 .location-container #location-select option {
-  background-color: #fff; /* Option background */
-  color: #0c1840; /* Option text color */
-  padding: 10px; /* Padding inside options */
+  background-color: #fff; 
+  color: #0c1840; 
+  padding: 10px; 
   font-size: 1.1rem;
 }
 
-/* Hover effect for options */
 .location-container #location-select option:hover {
-  background-color: #e5e7ff; /* Light blue on hover */
+  background-color: #e5e7ff; 
   color: #0c1840;
 }
 
-/* Remove default arrow for select element in Firefox */
 select::-ms-expand {
   display: none;
 }
 
-/* Remove default select arrow in some browsers */
 select:focus {
   outline: none;
-  border-color: #0c1840; /* Border color on focus */
+  border-color: #0c1840; 
+}
+
+@media (max-width: 780px){
+    body {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 275px) {
-  body {
-    overflow: auto;
-  }
-
   .filter-container {
-    padding: 20px; /* Reduce padding to save space */
-    max-width: 100%; /* Ensure the container fits the screen width */
-    box-shadow: none; /* Remove shadow for a cleaner look on small screens */
+    padding: 20px;
+    max-width: 100%; 
+    box-shadow: none; 
   }
 
   .checkbox-group {
     display: flex;
-    flex-direction: column; /* Stack the checkboxes vertically */
+    flex-direction: column; 
   }
 
   label {
-    width: 100%; /* Make labels take full width */
-    font-size: 0.9rem; /* Adjust font size to fit smaller screens */
+    width: 100%; 
+    font-size: 0.9rem;
   }
 
   input[type="checkbox"] {
-    height: 24px; /* Adjust checkbox size */
+    height: 24px; 
     width: 24px;
-    margin-right: 8px; /* Reduce space between checkbox and label */
+    margin-right: 8px; 
   }
 
   .location-container #location-select {
-    background-image: none; /* Remove the arrow background */
-    font-size: 0.9rem; /* Reduce font size for select dropdown */
-    padding: 8px; /* Adjust padding */
-    width: 100%; /* Ensure dropdown takes full width */
+    background-image: none;
+    font-size: 0.9rem;
+    padding: 8px; 
+    width: 100%;
   }
 }
