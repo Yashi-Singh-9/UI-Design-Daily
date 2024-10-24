@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscribe - 2 | UI Design Daily</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+          <div class="card-1">
+            <h2>Try it now!</h2>
+            <p>Free trial, no obligation</p>
+          </div>
+      
+          <form id="card-form" novalidate>
+            <label for="email">Work Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <div id="email-error" class="error-message"></div> <!-- Error message container -->
+      
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="terms" value="agree-terms" required>
+                <span>I Agree to the <a href="#" id="terms-link">Terms and Conditions</a>.</span>
+              </label>
+            </div>
+            <div id="terms-error" class="error-message"></div> <!-- Error message for terms -->
+      
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="newsletter" value="subscribe-newsletter">
+                <span>Subscribe to our newsletter.</span>
+              </label>
+            </div>
+      
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="newsletter" value="subscribe-newsletter" checked>
+                <span>Subscribe to our trial onboarding emails.</span>
+              </label>
+            </div>
+      
+            <button type="submit">Download Now</button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
