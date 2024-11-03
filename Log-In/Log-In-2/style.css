@@ -188,7 +188,7 @@ input::placeholder {
 }
 
 .login-image {
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-image: url(Images/ocean.png);
   background-size: cover;
   background-position: center;
   width: 50%;
