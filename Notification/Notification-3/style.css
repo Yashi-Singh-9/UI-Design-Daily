@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notification-container {
+  position: relative;
+  max-width: 696px;
+  width: 100%;
+}
+
+.notification-bell {
+  position: absolute;
+  top: -80px;
+  right: -30px;
+  background-color: #1a1a45;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notification-bell i {
+  color: #fff;
+  font-size: 44px;
+}
+
+.notification-card {
+  margin: 20px -20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: -100px -30px #e9ebff;
+  padding: 50px;
+}
+
+.notification-header {
+  font-weight: 600;
+  color: #0c0e41;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.message-icon {
+  width: 89px;
+  height: 89px;
+  background-color: #ffe9f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-right: 30px;
+  font-size: 44px;
+  color: #c83974;
+}
+
+.message-content {
+  font-size: 18px;
+  color: #0c0e41;
+}
+
+.message-date {
+  font-size: 16px;
+  color: #0c0e41;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.share-buttons button {
+  background: none;
+  border-radius: 34px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3a3a3a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.share-buttons .twitter {
+  border: 1px solid #158abb;
+  color: #158abb;
+}
+
+.twitter:hover {
+  background-color: #158abb;
+  color: #fff;
+}
+
+.share-buttons .facebook {
+  border: 1px solid #205195;
+  color: #205195;
+}
+
+.facebook:hover {
+  background-color: #205195;
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .notification-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 590px) {
+  .notification-bell {
+    width: 60px;
+    height: 60px;
+    top: -70px;
+    right: -20px;
+  }
+
+  .notification-bell i {
+    font-size: 32px;
+  }
+
+  .notification-header {
+    font-size: 18px;
+  }
+
+  .message-icon {
+    width: 70%;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .message-content {
+    font-size: 16px;
+  }
+
+  .message-date {
+    font-size: 14px;
+  }
+
+  .share-buttons {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+}
