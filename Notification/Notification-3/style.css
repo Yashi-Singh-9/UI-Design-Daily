@@ -128,6 +128,17 @@ body {
   color: #fff;
 }
 
+.notification-card {
+  display: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.notification-card.active {
+  display: block;
+  opacity: 1;
+}
+
 @media (max-width: 760px) {
   .notification-container {
     width: 80%;
