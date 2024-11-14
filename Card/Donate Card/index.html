@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="donation-form-container">
+        <p>Select gift frequency</p>
+      
+        <!-- Gift Frequency Buttons -->
+        <div class="frequency-selector">
+          <button class="active" onclick="setFrequency('Monthly')">Monthly</button>
+          <button onclick="setFrequency('One-time')">One time</button>
+        </div>
+      
+        <!-- Donation Amount Options -->
+        <p>Select amount</p>
+        <div class="amount-selector" id="amountSelector">
+          <button class="active" onclick="setAmount(12)">$12</button>
+          <button onclick="setAmount(30)">$30</button>
+          <button onclick="setAmount(50)">$50</button>
+          <button onclick="setAmount(60)">$60</button>
+        </div>
+      
+        <!-- Checkbox for Cover Fees -->
+        <div class="cover-fees">
+          <input type="checkbox" id="coverFees">
+          <label for="coverFees">Yes, I'll generously add $0.30 each month to cover the transaction fees</label>
+        </div>
+      
+        <!-- Name and Email Fields -->
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <p class="error-message" id="errorMessage"></p>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <p class="error-message" id="errorMessage"></p>
+        <!-- Honor Link -->
+        <a href="#" class="honor-link">Give in honor to another person</a>
+      
+        <div id="formMessage" class="form-message"></div>
+      
+        <!-- Donate Button -->
+        <button class="donate-button" onclick="donateNow()">Donate now</button>
+      
+        <!-- Terms -->
+        <div class="terms">
+          By donating, you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
