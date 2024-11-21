@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Merriweather:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171b34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ff529b;
+}
+
+.breadcrumb i {
+  margin: 0 8px;
+  color: #ff529b;
+}
+
+.breadcrumb span {
+  color: #b6bef2;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #202544;
+  border-radius: 23px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.icon img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.content h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: #b6bef2;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.content p span {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: #b6bef2;
+  font-size: 16px;
+}
+
+.content p {
+  color: #ff529b;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-button {
+  background-color: #ff529b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.download-button:hover {
+  background-color: #e04386;
+}
+
+.rating {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ecc86b;
+  background-color: #171b34;
+  padding: 12px 20px;
+  border-radius: 39px;
+}
+
+.rating i {
+  margin-right: 3px;
+}
+
+.rating .reviews {
+  margin-left: 8px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .content p,
+  .breadcrumb a,
+  .breadcrumb span,
+  .breadcrumb i {
+    font-size: 14px;
+  }
+
+  .download-button {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  .rating {
+    margin-top: 12px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
