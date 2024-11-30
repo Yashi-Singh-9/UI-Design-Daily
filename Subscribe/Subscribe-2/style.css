@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #d8ddf5;
+}
+
+.card-container {
+  background: linear-gradient(312.4deg, #f7f8ff 1.64%, #e7eafe 104.3%);
+  border-radius: 24px;
+  max-width: 530px;
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: 40px 40px #c8cff4;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 60px;
+}
+
+.card-1 {
+  margin-bottom: 30px;
+}
+
+.card-1 h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card-1 p {
+  font-size: 20px;
+}
+
+input[type="email"] {
+  max-width: 369px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #b1b7d9;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background: transparent;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+  accent-color: #141a3a;
+}
+
+a,
+a:visited {
+  color: #141a3a;
+}
+
+button {
+  background-color: #fdc3d4;
+  color: #141a3a;
+  border: 1px solid #cb6565;
+  border-radius: 4px;
+  padding: 10px 20px;
+  max-width: 380px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f6a3b7;
+  border-color: #ab4c4c;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 0.875rem;
+  margin-top: -18px;
+  margin-bottom: 18px;
+}
+
+#terms-error {
+  margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 10px 0;
+  }
+
+  .checkbox-group label {
+    font-size: 14px;
+  }
+
+  button {
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: #ececf6;
+  height: 100vh;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7088de;
+  color: #fff;
+  padding: 30px 30px;
+  position: fixed;
+  top: 50px;
+  max-width: 1162px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 75px;
+}
+
+.banner a,
+.banner a:visited {
+  color: #fff;
+}
+
+.close-banner {
+  background: #5d78d7;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  width: 68px;
+  height: 68px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cookie-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 460px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 463px;
+  width: 100%;
+}
+
+.cookie-content {
+  text-align: center;
+  position: relative;
+}
+
+.close-dialog {
+  position: relative;
+  right: -180px;
+  background: none;
+  border: 1px solid #eff2fd;
+  border-radius: 50%;
+  color: #101010;
+  height: 56px;
+  width: 56px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cookie-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 108px;
+  background-color: #fff3ec;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.material-symbols-outlined {
+  color: #d2723c;
+  font-size: 50px !important;
+}
+
+.cookie-content p {
+  max-width: 298px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.cookie-content a,
+.cookie-content a:visited {
+  color: #000;
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.cookie-buttons button {
+  font-weight: 700;
+  background: none;
+  border: 1px solid #7088de;
+  border-radius: 32px;
+  padding: 15px 20px;
+  color: #5966f3;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-buttons button:hover {
+  background-color: #5966f3;
+  color: white;
+}
+
+.cookie-settings {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .close-banner {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .cookie-dialog {
+    padding: 20px;
+    top: 60%;
+  }
+
+  .cookie-content p {
+    margin: 20px auto;
+    font-size: 14px; /* Smaller text on mobile */
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cookie-buttons button {
+    width: 100%; /* Full width buttons */
+    margin: 5px 0; /* Space between buttons */
+    padding: 10px 0; /* Smaller padding */
+  }
+
+  .cookie-icon {
+    width: 80px; /* Smaller icon */
+    height: 80px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 40px; /* Smaller icon font */
+  }
+
+  .close-dialog {
+    right: -90px; /* Adjust positioning */
+    height: 40px; /* Smaller size */
+    width: 40px; /* Smaller size */
+    font-size: 1.2rem; /* Smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  .close-banner {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .cookie-dialog {
+    padding: 15px;
+  }
+
+  .cookie-content p {
+    font-size: 12px; /* Even smaller text */
+  }
+
+  .cookie-buttons button {
+    padding: 8px 0; /* Smaller padding */
+  }
+
+  .cookie-icon {
+    width: 60px; /* Even smaller icon */
+    height: 60px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 30px; /* Even smaller icon font */
+  }
+
+  .close-dialog {
+    height: 36px; /* Smaller size */
+    width: 36px; /* Smaller size */
+    font-size: 1rem; /* Smaller text */
+  }
+}

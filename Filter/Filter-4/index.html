@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filter Modal</title>
+</head>
+<body>
+    <div class="modal">
+        <button class="close-btn" onclick="closeModal()">&times</button>
+        <h1>Filter</h1>
+      
+        <div class="search-section">
+          <p>SEARCH BY KEYWORD</p>
+          <input type="text" placeholder="&#128269 Search jobs" />
+        </div>
+      
+        <div class="view-section">
+          <p>VIEW</p>
+          <label>
+            <input type="radio" name="view" /> All job posts
+          </label>
+          <label>
+            <input type="radio" name="view" /> Active job posts
+          </label>
+          <label>
+            <input type="radio" name="view" checked /> Archived job posts
+          </label>
+        </div>
+      
+        <div class="include-section">
+          <p>INCLUDE</p>
+          <label>
+            <input type="checkbox" checked /> Jobs shared with me
+          </label>
+        </div>
+      
+        <button class="save-btn" onclick="saveChanges()">Save Changes</button>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

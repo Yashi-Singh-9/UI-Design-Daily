@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  overflow: hidden;
+  background-color: #f2f5ff;
+  color: #0c1840;
+}
+
+.filter-container {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: -20px -50px #e5e7ff;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 23px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  height: 29px;
+  width: 29px;
+  accent-color: #0c1840;
+}
+
+.location-container {
+  margin: 35px auto;
+}
+
+.location-container h2 {
+  font-size: 1.1rem;
+}
+
+/* Style the select dropdown */
+.location-container #location-select {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid #bbc6e9;
+  height: 58px;
+  max-width: 320px;
+  width: 98%;
+  background-color: #fff;
+  color: #0c1840; /* Updated text color */
+  padding: 10px;
+  font-size: 1.1rem;
+  appearance: none; /* Removes default browser dropdown styling */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%230c1840' d='M5 6L0 0h10L5 6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+
+/* Style for individual dropdown options */
+.location-container #location-select option {
+  background-color: #fff; /* Option background */
+  color: #0c1840; /* Option text color */
+  padding: 10px; /* Padding inside options */
+  font-size: 1.1rem;
+}
+
+/* Hover effect for options */
+.location-container #location-select option:hover {
+  background-color: #e5e7ff; /* Light blue on hover */
+  color: #0c1840;
+}
+
+/* Remove default arrow for select element in Firefox */
+select::-ms-expand {
+  display: none;
+}
+
+/* Remove default select arrow in some browsers */
+select:focus {
+  outline: none;
+  border-color: #0c1840; /* Border color on focus */
+}
+
+@media (max-width: 275px) {
+  body {
+    overflow: auto;
+  }
+
+  .filter-container {
+    padding: 20px; /* Reduce padding to save space */
+    max-width: 100%; /* Ensure the container fits the screen width */
+    box-shadow: none; /* Remove shadow for a cleaner look on small screens */
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column; /* Stack the checkboxes vertically */
+  }
+
+  label {
+    width: 100%; /* Make labels take full width */
+    font-size: 0.9rem; /* Adjust font size to fit smaller screens */
+  }
+
+  input[type="checkbox"] {
+    height: 24px; /* Adjust checkbox size */
+    width: 24px;
+    margin-right: 8px; /* Reduce space between checkbox and label */
+  }
+
+  .location-container #location-select {
+    background-image: none; /* Remove the arrow background */
+    font-size: 0.9rem; /* Reduce font size for select dropdown */
+    padding: 8px; /* Adjust padding */
+    width: 100%; /* Ensure dropdown takes full width */
+  }
+}

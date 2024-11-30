@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #f4edff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notification-popup {
+  position: relative;
+  max-width: 550px;
+  width: 96%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 10px 10px 10px rgba(205, 138, 255, 0.7);
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+  color: #bbb;
+  background: #f8f4ff;
+  border: none;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+  background-color: #e0d4ff;
+  color: #38196b;
+  border: 1px solid #c7a4ff;
+}
+
+.notification {
+  margin: 30px auto;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #38196b;
+  margin-bottom: 30px;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon i.fa-bell {
+  height: 58px;
+  width: 58px;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(to bottom right, #9ab0ff, #eb73ff);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon p {
+  margin-left: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+}
+
+.block-btn,
+.allow-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 20px 0 -20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.block-btn {
+  border: 1px solid #ffb2b2;
+  color: #ff1212;
+}
+
+.block-btn:hover {
+  background-color: #ffcccc;
+  border-color: #ff1212;
+  color: #a30000;
+}
+
+.allow-btn {
+  border: 1px solid #9eebaf;
+  color: #0abe31;
+}
+
+.allow-btn:hover {
+  background-color: #e0f7e8;
+  border-color: #0abe31;
+  color: #0a7b22;
+}
+
+@media (max-width: 345px) {
+  .close-btn {
+    height: 36px;
+    width: 36px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .notification-icon {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .notification-icon p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column-reverse;
+  }
+
+  .block-btn,
+  .allow-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}
