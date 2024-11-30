@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,3 +30,43 @@
       <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter - 1 | UI Design Daily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="filter-box">
+    <button class="close-btn">&times;</button>
+    <input type="text" id="searchInput" class="search-input" placeholder="Add an industry">
+    <div class="checkbox-list">
+      <label><input type="checkbox" value="Agriculture" checked> Agriculture</label>
+      <label><input type="checkbox" value="Air Transport"> Air Transport</label>
+      <label><input type="checkbox" value="Business Services"> Business Services</label>
+      <label><input type="checkbox" value="Construction" checked> Construction</label>
+      <label><input type="checkbox" value="Dairy"> Dairy</label>
+      <label><input type="checkbox" value="Education"> Education</label>
+      <label><input type="checkbox" value="Health"> Health</label>
+    </div>
+    <div class="buttons">
+      <button id="resetBtn" class="reset-btn">Reset</button>
+      <button id="showResultsBtn" class="show-results-btn">Show results</button>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div id="selectionModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <p id="modalMessage"></p>
+  </div>
+</div>
+      <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43

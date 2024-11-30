@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:wght@700&display=swap");
 
 * {
@@ -177,4 +178,185 @@ button {
     width: 95%; 
     margin-top: 35%;
   }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #f5f8ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #25297b;
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 378px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 40px;
+  border: 3px solid #1c1e57;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 12px 12px #e7eefc;
+  word-wrap: break-word; 
+  word-break: break-word;
+}
+
+.card {
+  padding: 60px;
+}
+
+.card h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 1.8rem;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; 
+}
+
+input[type="checkbox"] {
+  accent-color: #f5f8ff;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.4rem;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  word-wrap: break-word; 
+}
+
+.btn-done {
+  background-color: #25297b;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-done:hover {
+  background-color: #1c1e57;
+}
+
+.btn-cancel {
+  background-color: #f5f8ff;
+  color: #25297b;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 45% auto;
+  padding: 20px;
+  border: 3px solid #1c1e57;
+  width: 80%;
+  border-radius: 10px;
+  word-wrap: break-word; 
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalOkButton {
+  background-color: #25297b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#modalOkButton:hover {
+  background-color: #1c1e57;
+}
+
+
+@media (max-width: 375px) {
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 40px 20px; 
+  }
+
+  .modal-content {
+    width: 95%; 
+    margin-top: 35%;
+  }
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,4 +83,90 @@
     </div>
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div class="main-container">
+        <div class="block-1">
+            <h2>Settings</h2>
+            <div class="mode">
+                <p>Dark Mode</p>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="notification">
+                <p>Desktop Notification</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="inbox">
+                <p>Focused Inbox</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <!-- Coverstion View-->
+            <h2>Conversation View</h2>
+            <section>
+                <label class="radio-container">
+                    <input type="radio" id="newest" name="conv-view" value="newest-at-top" checked>
+                    <span class="radio-custom"></span>
+                    <label for="newest" class="radio-label">Newest on top</label><br>
+                </label>    
+
+                <label class="radio-container">
+                    <input type="radio" id="newest-bottom" name="conv-view" value="newest-at-bottom">
+                    <span class="radio-custom"></span>
+                    <label for="newest-bottom" class="radio-label">Newest on bottom</label><br>
+                </label>
+
+                <label class="radio-container">
+                    <input type="radio" id="off" name="conv-view" value="off">
+                    <span class="radio-custom"></span>
+                    <label for="off" class="radio-label">Off</label><br>
+                </label>
+            </section>
+
+            <!-- Reading Panel -->
+            <h2>Reading Panel</h2>
+            <section class="read">
+                <label class="radio-container">
+                    <input type="radio" id="right" name="read-panel" value="show-on-right" checked>
+                    <span class="radio-custom"></span>
+                    <label for="right" class="radio-label">Show on the right</label>
+                </label><br>
+
+                <label class="radio-container">
+                    <input type="radio" id="bottom" name="read-panel" value="show-on-bottom">
+                    <span class="radio-custom"></span>
+                    <label for="bottom" class="radio-label">Show on the bottom</label>
+                </label><br>
+
+                <label class="radio-container">
+                    <input type="radio" id="hide" name="read-panel" value="hide">
+                    <span class="radio-custom"></span>
+                    <label for="hide" class="radio-label">Hide</label>
+                </label><br>
+            </section>
+
+            <!-- Settings -->
+            <a href="#">View all Settings</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 </html>

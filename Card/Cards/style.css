@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@600&display=swap");
 
 * {
@@ -143,3 +144,150 @@ body {
     width: auto;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeecf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.mobile-broadband {
+  border: 1px solid #ff68a7;
+}
+
+.tv-broadband {
+  border: 1px solid #68a4ff;
+}
+
+.icon {
+  font-size: 40px;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-broadband .icon {
+  background-color: #ff68a7;
+  color: #fff;
+  height: 74px;
+  width: 74px;
+}
+
+.tv-broadband .icon {
+  background-color: #68a4ff;
+  color: #fff;
+  height: 74px;
+  width: 74px;
+  font-size: 35px;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: #121f38;
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobile-broadband .btn {
+  background-color: #ffe8f1;
+  color: #e02e79;
+}
+
+.tv-broadband .btn {
+  background-color: #edf4ff;
+  color: #1b65d6;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.mobile-broadband .btn:hover {
+  background-color: #ff68a7;
+  color: #fff;
+}
+
+.tv-broadband .btn:hover {
+  background-color: #68a4ff;
+  color: #fff;
+}
+
+.mobile-broadband p,
+.tv-broadband p {
+  width: 100%;
+  max-width: 270px;
+  margin: 20px auto;
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43

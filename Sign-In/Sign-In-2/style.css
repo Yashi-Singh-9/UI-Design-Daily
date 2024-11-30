@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 * {
@@ -173,4 +174,181 @@ input[type="password"]::placeholder {
     flex-wrap: wrap;
     gap: 1rem;
   }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to bottom right, #eddde7, #dfdded);
+  color: #201e6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 31px;
+  box-shadow: 0px 4px 8px rgba(175, 120, 218, 0.5),
+    0px 8px 20px rgba(239, 101, 234, 0.4),
+    0px 12px 24px rgba(175, 120, 218, 0.3);
+  padding: 3.5rem;
+  max-width: 474px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dde4ed;
+  border-radius: 4px;
+  outline: none;
+  color: #201e6d;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.sign-in-button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  padding: 1.2rem;
+  margin: 1.2rem auto;
+  background-color: #a22cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sign-in-button:hover {
+  background-color: #8a3fe0;
+}
+
+.forgot-password,
+.forgot-password:visited {
+  display: block;
+  margin: 1rem 0;
+  color: #1c49e8;
+  text-align: center;
+  text-decoration: none;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  color: #96a6b9;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  border-top: 1.5px solid #dde4ed;
+  margin: 10px 15px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.6rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.reddit {
+  background-color: #ff4500;
+}
+
+.sign-up-options p {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 1rem 0 0.5rem;
+}
+
+.sign-up-link,
+.sign-up-link:visited {
+  margin: 0.9rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #dde4ed;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-link:hover {
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: auto;
+  }
+
+  .login-container {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .social-login {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,4 +35,42 @@
     </div>
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification | UI Design Daily</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cookie" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner" id="banner">
+        <span>We are now part of Salesforce. <a href="#">Learn why we’re even better together</a></span>
+        <button class="close-banner" onclick="closeBanner()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <div class="cookie-dialog" id="cookieDialog">
+        <div class="cookie-content">
+          <button class="close-dialog" onclick="closeCookieDialog()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="cookie-icon">
+            <span class="material-symbols-outlined">
+              cookie
+            </span>
+          </div>
+          <p>By clicking "Accept All Cookies", you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a href="#">More Info</a></p>
+          <div class="cookie-buttons">
+            <button onclick="acceptCookies()">Accept cookies</button>
+            <button onclick="declineCookies()">Decline cookies</button>
+          </div>
+          <a href="#" class="cookie-settings">Cookie settings</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap");
 
 * {
@@ -186,4 +187,194 @@ input[type="password"] {
   #email {
     margin-top: 20px;
   }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f9ff;
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3em;
+  box-shadow: 0 0 0 20px #e8f1fd;
+  text-align: center;
+  width: 480px;
+}
+
+.signup-box h1 {
+  font-size: 36px;
+  color: #1b1c40;
+  font-weight: 800;
+  max-width: 254px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signup-box p {
+  color: #1b1c40;
+  font-weight: 600;
+  max-width: 381px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 1.5em;
+}
+
+.facebook-btn {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  background-color: #4968ad;
+  color: #fff;
+  padding: 1.2em;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 1.5em auto;
+}
+
+.or-text {
+  margin: 10px auto !important;
+  color: #aaa !important;
+  font-size: 0.9em;
+  font-weight: 800 !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1em;
+}
+
+.error-message {
+  display: flex;
+  color: #ff0000;
+  font-size: 0.85em;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name-fields input,
+.name-fields input:focus {
+  width: 100%;
+  padding: 0.8em;
+  border: 2px solid #c8d1e5;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #1b1c40;
+  font-size: 18px;
+  margin: 20px auto;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.8em;
+  border: 2px solid #c8d1e5;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 18px;
+  margin-bottom: 1.2em;
+}
+
+.submit-btn {
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+  background-color: #1e2c4b;
+  color: #fff;
+  padding: 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.terms-text {
+  font-size: 14px !important;
+  color: #1e2c4b;
+  margin-top: 40px !important;
+  max-width: 274px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.terms-text a,
+.terms-text a:visited {
+  color: #1e2c4b;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    width: 90%;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .name-fields input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0.8em;
+  }
+
+  #email {
+    margin-top: 20px;
+  }
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 }

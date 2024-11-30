@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,4 +48,55 @@
     </div>
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Filter - 5 | UI Daily Design</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+          <h1>Filter content just for you</h1>
+          <button onclick="closeModal()">✕</button>
+        </div>
+        <div class="modal-section">
+            <h3>Resources</h3>
+            <div class="checkbox-group">
+                <div>
+                <label><input type="checkbox"> Higher Education</label>
+                <label><input type="checkbox"> HR </label>
+                <label><input type="checkbox"> Marketing </label>
+                <label><input type="checkbox"> Support </label>
+                </div>
+                <div>
+                <label><input type="checkbox"> Engineering </label>
+                <label><input type="checkbox" checked> Internal Comms </label>
+                <label><input type="checkbox" checked> Sales </label>
+                </div>
+                <div>
+                <label><input type="checkbox"> Financial Services </label>
+                <label><input type="checkbox"> IT </label>
+                <label><input type="checkbox"> Security</label>
+                </div>
+            </div>
+            <div class="modal-section">
+                <h3>Tailored To</h3>
+                <div class="checkbox-group">
+                <label><input type="checkbox" checked> Admins</label>
+                <label><input type="checkbox"> Developers</label>
+                <label><input type="checkbox"> General Use</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="clear-button" onclick="clearFilters()">Clear</button>
+            <button class="apply-button" onclick="applyFilters()">Apply Filters</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 </html>

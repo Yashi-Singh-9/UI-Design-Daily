@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@600&display=swap");
 
 * {
@@ -165,3 +166,172 @@ body {
     gap: 5px;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7eaf5;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 577px;
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0px 18px #e7eaf5;
+  padding: 60px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 26px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: #0f1730;
+  margin: 5px 0;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #0f1730;
+}
+
+.status-badge {
+  background-color: #11b3e5;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-top: 5px;
+  max-width: 75px;
+  width: 100%;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  border: 1px solid #e7eaf5;
+  background-color: #fbfcff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #0f1730;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 6px 0;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #0f1730;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.btn-primary {
+  background-color: #0f1730;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0f1730;
+  border: 1px solid #aab7dd;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  .card {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .card-info {
+    align-items: center;
+  }
+
+  .card-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43

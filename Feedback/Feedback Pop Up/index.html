@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,4 +42,49 @@
     </div>
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Pop Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="survey-container" id="surveyContainer">
+        <!-- Close Button -->
+        <button class="close-button" onclick="closeSurvey()">
+          <i class="fa-solid fa-xmark"></i></button>
+      
+        <!-- Survey Question -->
+        <div class="survey-question">How satisfied are you using our invoicing feature?</div>
+      
+        <!-- Rating Buttons -->
+        <div class="rating-container">
+          <button class="rating-button" onclick="selectRating(1)">1</button>
+          <button class="rating-button" onclick="selectRating(2)">2</button>
+          <button class="rating-button" onclick="selectRating(3)">3</button>
+          <button class="rating-button" onclick="selectRating(4)">4</button>
+          <button class="rating-button" onclick="selectRating(5)">5</button>
+        </div>
+      
+        <div class="rating-label">
+          <span>Extremely dissatisfied</span>
+          <span>Extremely satisfied</span>
+        </div>
+        <div id="error-message"></div>
+        <!-- Checkbox -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="notUsingFeature">
+          <label for="notUsingFeature">I don’t use the invoicing feature</label>
+        </div>
+      
+        <!-- Next Button -->
+        <button class="next-button" onclick="nextStep()">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400&family=Roboto:wght@400&display=swap");
 
 * {
@@ -220,3 +221,227 @@ body {
     width: 100%; 
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400&family=Roboto:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.notification-wrapper {
+  position: relative;
+  max-width: 585px;
+  width: 100%;
+}
+
+.notification-icon {
+  position: absolute;
+  cursor: pointer;
+  top: -35px;
+  right: 10px;
+  background-color: #2d2d6e;
+  padding: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 2em;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 65px;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notification-header h3 {
+  font-family: "Merriweather", serif, "Georgia", Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #161544;
+}
+
+.mark-read {
+  background-color: #f2f4ff;
+  border: none;
+  color: #4b5ade;
+  padding: 8px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: start;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.user-img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.notification-content {
+  flex-grow: 1;
+  font-family: "Poppins", sans-serif, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.notification-content p {
+  color: #161544;
+  max-width: 380px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.time {
+  color: #a2a1b4;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.decline-btn,
+.accept-btn {
+  font-family: "Roboto", sans-serif, Arial, sans-serif;
+  font-weight: 400;
+  padding: 20px 40px;
+  background: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.decline-btn {
+  border: 1px solid #a2a1b4;
+}
+
+.accept-btn {
+  border: none;
+  background: #161544;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.decline-btn:hover {
+  background: #a2a1b4;
+  color: #fff;
+  border: 1px solid #a2a1b4;
+}
+
+.accept-btn:hover {
+  background: #1a198b;
+}
+
+@media (max-width: 780px) {
+  body {
+    height: auto;
+  }
+
+  .notification-wrapper {
+    margin: 150px auto;
+    width: 90%;
+  }
+
+  .decline-btn,
+  .accept-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .notification-header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .notification-header h3 {
+    font-size: 18px;
+  }
+
+  .mark-read {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .notification-item {
+    flex-wrap: wrap;
+  }
+
+  .user-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 10px; 
+  }
+
+  .notification-content {
+    font-size: 16px;
+  }
+
+  .notification-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .time {
+    font-size: 14px;
+  }
+
+  .actions {
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .decline-btn,
+  .accept-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%; 
+  }
+}
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43

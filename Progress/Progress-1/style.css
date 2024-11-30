@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Merriweather:wght@900&display=swap");
 
 * {
@@ -79,3 +80,86 @@ h1 {
     gap: 30px;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Merriweather:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: #f5f5fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  position: relative;
+  max-width: 450px;
+  width: 90%;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: -40px -40px #d1d0f5;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 26px;
+  color: #1b1a34;
+  margin: 0 0 40px 0;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.progress-circle {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #1b1a34;
+  border: 6px solid #d5d4f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3d3d5c;
+}
+
+.progress-text {
+  margin-left: 15px;
+}
+
+.progress-text h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1b1a34;
+}
+
+.progress-text p {
+  font-size: 14px;
+  color: #1b1a34;
+}
+
+@media (max-width: 390px) {
+  .progress {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+>>>>>>> 06d09e18dfc642437d26ae3883e5a5337b89bc43
