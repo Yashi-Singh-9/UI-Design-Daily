@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Preferences Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="consent-modal">
+        <div class="modal-content">
+          <h2>About Your Privacy</h2>
+          <p>
+            We process your data to deliver content or advertisements and measure the delivery of such content or advertisements
+            to extract insights about our website. We share this information with our partners on the basis of consent and legitimate interest.
+            You may exercise your right to consent or object to a legitimate interest, based on a specific purpose below or at a partner level in the link
+            under each purpose. These choices will be signaled to our vendors.
+          </p>
+          <button class="allow-all">Allow all</button>
+          <div class="preferences">
+            <h3>Manage Consent Preferences</h3>
+            <div class="preference-item">
+              <span>
+                <i class="fa-solid fa-plus"></i> Strictly Necessary Cookies
+              </span>
+              <span class="always-active">
+                Always Active</span>
+            </div>
+            <div class="preference-item">
+              <span>
+                <i class="fa-solid fa-plus"></i> Functional Cookies
+              </span>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="preference-item">
+              <span>
+                <i class="fa-solid fa-plus"></i> Performance Cookies
+              </span>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="preference-item">
+              <span>
+                <i class="fa-solid fa-plus"></i> Personalised ads and content measurement, audience insights and product development
+              </span>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+      
+          <div class="buttons">
+            <button class="reject-all">Reject all</button>
+            <button class="submit-choices">Submit My Choices</button>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
