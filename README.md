@@ -99,13 +99,16 @@ For detailed documentation, refer to the official sites:
 
 ## Technologies
 The following technologies are used in this project:
-- **HTML5** - For the structure of the components and layouts
-- **CSS3** - For styling and responsive design
-- **JavaScript** - For adding interactivity to the components
+
+- **HTML5** - For the structure of the components and layouts.
+- **CSS3** - For styling and responsive design.
+- **JavaScript** - For adding interactivity to the components.
+- **SASS/SCSS** - A CSS preprocessor that adds features like variables, nesting, and mixins to streamline and modularize CSS development.
+- **LESS** - Another CSS preprocessor that provides dynamic styling capabilities such as variables, mixins, and functions for easier CSS management.
 
 ## Roadmap
 
-Currently, I am working on HTML, CSS and Javascript but in future I will be working on various technology.
+Currently, I am working on HTML, CSS, SASS/SCSS, Less and Javascript but in future I will be working on various technology.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
