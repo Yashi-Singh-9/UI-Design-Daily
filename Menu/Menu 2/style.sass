@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    background-color: #1E1E3D
+    color: #D3D3DD
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+  
+    @media(max-width: 780px)
+      height: auto
+
+.menu-container
+    margin: 0 auto
+    max-width: 305px
+    width: 100%
+    padding: 35px
+    background-color: #191936
+    border-radius: 5px
+    box-shadow: 0 0 0 15px #26264D
+  
+    @media(max-width: 780px)
+      margin: 80px auto
+  
+    @media(max-width: 310px)
+      width: 90%
+  
+    .section
+      margin-bottom: 20px
+    
+      h2
+        margin: 20px auto
+        font-size: 14px
+        letter-spacing: 3px
+      
+    ul
+      list-style: none
+      padding: 0
+      margin-top: 30px
+      margin-bottom: 50px
+      cursor: pointer
+      
+      li
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        gap: 10px
+        transition: .3s ease
+        
+        &:hover
+          background-color: #1E1E3D
+          padding: 10px        
+      
+      img
+        width: 43px
+        height: 43px
+        margin-right: 10px
+        
+        i
+          display: flex
+          align-items: center
+          color: #75759E
+          height: 22px
+          width: 22px          
+          
+          &.fa-user
+            background-color: #E079C9
+            color: #191936
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 43px
+            width: 43px
+            margin-right: 10px
+            font-size: 16px
+   
+    a,
+    a:visited
+      display: block
+      margin-top: -28px
+      font-size: 14px
+      color: #6868FF
+      text-decoration: none
+    
+    .contact
+      margin-top: 50px
+      border: 1px solid #26264C
+      padding: 10px
+      
+      p
+        margin: 10px
+        font-size: 14px
+        color: #75759E
+     
+      a,
+      a:visited
+        display: flex
+        margin: 10px
+        font-size: 16px
+        color: #D3D3DD
+        overflow: hidden
+      
+        i
+          display: flex
+          align-items: center
+          color: #75759E
+          margin-right: 5px
