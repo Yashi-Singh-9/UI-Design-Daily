@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #F1F4FF;
+  color: #1B255A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (max-width: 780px) {
+  body {
+    height: auto;
+  }
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 2px 0 #F1F4FF;
+  max-width: 476px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 780px) {
+  .pricing-card {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 480px) {
+  .pricing-card {
+    width: 90%;
+  }
+}
+.pricing-card .pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-card .pricing-header .plan-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  border: 1px solid #A6ADD2;
+  margin-bottom: 20px;
+}
+.pricing-card .pricing-header .plan-icon img {
+  height: 53px;
+  width: 53px;
+}
+.pricing-card .pricing-header .plan-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-card .pricing-header .plan-price .currency {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing-card .pricing-header .plan-price .currency .price {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.pricing-card .pricing-header .plan-price .unit {
+  font-size: 16px;
+}
+.pricing-card .downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 40px auto;
+}
+.pricing-card .downloads .download-option {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  background: none;
+  border-radius: 20px;
+  border: 2px solid #D2D9F3;
+  color: #1B255A;
+  width: 66px;
+  height: 56px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+.pricing-card .downloads .download-option.selected {
+  background-color: #1B255A;
+  border: none;
+  color: #fff;
+}
+.pricing-card .downloads .download-option:hover {
+  background-color: #1B255A;
+  border: none;
+  color: #fff;
+}
+.pricing-card .description {
+  margin-top: -30px;
+}
+.pricing-card .subscribe-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 632px;
+  width: 100%;
+  background-color: #1e2a57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: 30px;
+}
+.pricing-card .subscribe-btn:hover {
+  background-color: #142083;
+}
+.pricing-card .success-message {
+  margin-top: 15px;
+  color: green;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+.pricing-card .success-message.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

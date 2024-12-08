@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pricing-card">
+        <div class="pricing-header">
+          <div class="plan-icon">
+            <img src="Frame.png" alt="Icon">
+            <span>BASIC</span>
+          </div>
+          <div class="plan-price">
+            <p class="currency">KR
+              <span class="price" id="price">199</span>
+            </p>
+            <span class="unit">NOK/MONTH</span>
+          </div>
+        </div>
+      
+        <div class="downloads">
+          <button class="download-option" data-price="99">10</button>
+          <button class="download-option selected" data-price="199">25</button>
+          <button class="download-option" data-price="399">50</button>
+          <button class="download-option" data-price="599">100</button>
+        </div>
+        <p class="description">Downloads per month</p>
+        <button id="subscribe" class="subscribe-btn">Subscribe</button>
+        <p id="success-message" class="success-message hidden">Subscription Successful!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
