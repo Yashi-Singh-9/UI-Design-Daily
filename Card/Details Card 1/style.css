@@ -60,7 +60,7 @@ body {
   padding: 15px 20px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 .card .header button:hover {
   background-color: #333333;
