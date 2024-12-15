@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f9ff;
+  height: 100vh;
+
+  @media (max-width: 420px) {
+    height: auto;
+  }
+}
+
+.card {
+  max-width: 516px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 10px 4px #e9f1fd;
+  border-radius: 16px;
+  overflow: hidden;
+
+  @media (max-width: 520px) {
+    width: 90%;
+  }
+
+  @media (max-width: 420px) {
+    margin: 50px auto;
+  }
+
+  .header {
+    background-color: #133e61;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+
+    h1 {
+      height: 96px;
+      width: 99px;
+      color: #229bff;
+      font-weight: 700;
+      font-size: 48px;
+      background-color: #001126;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+    }
+
+    span {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 700;
+      display: flex;
+      align-items: end;
+    }
+  }
+
+  .card-content {
+    padding: 40px;
+
+    span {
+      font-weight: 600;
+      font-size: 32px;
+      color: #001e36;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 396px;
+      width: 100%;
+      font-size: 24px;
+      color: #7e8d9a;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    a,
+    a:visited {
+      font-size: 24px;
+      color: #1142c1;
+      font-weight: 600;
+    }
+
+    button {
+      display: block;
+      margin-top: 40px;
+      border: none;
+      padding: 1.3rem;
+      cursor: pointer;
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      background-color: #133e61;
+      color: #fff;
+      max-width: 396px;
+      width: 100%;
+      border-radius: 66px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: lighten(#133e61, 10%);
+      }
+    }
+  }
+}
