@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=IBM+Plex+Sans:wght@500;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'IBM Plex Sans', sans-serif
+  font-weight: 500
+  display: flex
+  justify-content: center
+  align-items: center
+  background: linear-gradient(to bottom right, #D6D6DC, #F6F6FB)
+  height: 100vh
+  
+  @media(max-width: 768px)
+    height: auto
+    
+.card
+  background-color: #F5F5FD
+  padding: 40px
+  border-radius: 20px
+  box-shadow: 0 0 0 10px #fff
+  max-width: 588px
+  width: 100%
+  
+  @media(max-width: 768px)
+    width: 90%
+    margin: 100px auto
+    
+  h1
+    font-family: 'Merriweather', serif
+    font-weight: 900
+    font-size: 26px
+    color: #13123C
+    margin: 20px 10px
+    
+  .details
+    margin-top: 60px
+    color: #13123C
+    display: flex
+    gap: 100px
+    flex-wrap: wrap
+    
+    @media(max-width: 768px)
+      gap: 50px
+    
+    div
+      display: flex
+      justify-content: space-around
+      font-weight: 700
+      font-size: 16px
+      flex-direction: column
+      
+      .time
+        margin-top: 10px
+        font-size: 22px
+        font-weight: 500
+ 
+.buttons
+  display: flex
+  flex-wrap: wrap
+  border: none
+  gap: 15px
+  margin: 50px auto
+  
+  button
+    font-family: 'IBM Plex Sans', sans-serif
+    font-weight: 500
+    cursor: pointer
+    border: none
+    padding: 20px
+    max-width: 224px
+    width: 100%
+    border-radius: 5px
+    font-size: 18px
+    transition: 0.3s ease
+    
+    @media(max-width: 768px)
+      max-width: unset
+      
+    &.register
+      background-color: #0F0E2F
+      color: #fff
+      
+      &:hover
+        background-color: lighten(#0F0E2F, 10%)
+      
+    &.calendar
+      background-color: transparent
+      border: 1px solid #0F0E2F
+      
+      i
+        margin-right: 8px
+      
+      &:hover
+        background-color: darken(#F5F5FD, 10%)
