@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(to bottom right, #f3f2ff, #f3f9ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.product-container {
+  max-width: 498px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #292e5a;
+  box-shadow: 0 -10px 0 10px #e9e8ff;
+  margin: 50px auto;
+
+  @media (max-width: 550px) {
+    width: 90%;
+  }
+
+  .product-price {
+    margin-bottom: 30px;
+
+    span {
+      font-size: 40px;
+      font-weight: 900;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  .buy-button {
+    padding: 1.4rem 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #5ff489, #79f4f4);
+    color: inherit;
+    text-transform: uppercase;
+    border-radius: 8px;
+    max-width: 385px;
+    width: 100%;
+    transition: 0.3s ease;
+    margin-bottom: 18px;
+
+    &:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #79f4f4, #5ff489);
+    }
+  }
+
+  .shipping-info {
+    margin-bottom: 10px;
+
+    p {
+      font-family: inherit;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      .info {
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+
+        i {
+          margin-right: 10px;
+          height: 35px;
+          width: 35px;
+          background: linear-gradient(to bottom right, #e9e8ff, #e7f3ff);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        a,
+        a:visited {
+          margin-right: 5px;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .delivery-check {
+    margin-top: 30px;
+    background-color: #f3f5ff;
+    padding: 20px;
+    border-radius: 8px;
+
+    .description {
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+    }
+
+    input {
+      margin-top: 15px;
+      padding: 1rem;
+      font-family: "Mulish", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      background-color: transparent;
+      border: 1px solid #b3c7e3;
+      border-radius: 8px;
+      color: #292e5a;
+      outline: none;
+      max-width: 222px;
+      width: 100%;
+
+      @media (max-width: 550px) {
+        max-width: unset;
+        margin-top: 25px;
+      }
+    }
+
+    .check {
+      font-family: "Mulish", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 1rem;
+      border: none;
+      background-color: #fff;
+      border-radius: 8px;
+      color: #292e5a;
+      max-width: 126px;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      @media (max-width: 550px) {
+        margin-top: 10px;
+        max-width: unset;
+      }
+
+      &:hover {
+        background-color: darken(#fff, 10%);
+      }
+    }
+  }
+
+  .pick-up {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    margin-top: 30px;
+    padding: 1.5rem;
+    color: #292e5a;
+    background: linear-gradient(to bottom right, #9cc4ff, #b4a8ff);
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 385px;
+    width: 100%;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to bottom right, #b4a8ff, #9cc4ff);
+    }
+  }
+}
