@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Merriweather:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  background-color: #f5f5fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px darken(#f5f5fd, 10%);
+  max-width: 606px;
+  width: 100%;
+  margin: 40px auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 80px auto;
+  }
+
+  span {
+    float: right;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #6c6b8a;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #e53935;
+    }
+  }
+
+  h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    text-align: center;
+    color: #151534;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  form {
+    padding: 15px 50px;
+
+    .form-group {
+      margin-bottom: 35px;
+
+      label {
+        display: block;
+        color: lighten(#151534, 60%);
+        font-size: 1.2rem;
+      }
+
+      input,
+      select {
+        max-width: 418px;
+        width: 100%;
+        padding: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid lighten(#151534, 80%);
+        outline: none;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #151534;
+      }
+
+      textarea {
+        border: 2px solid #e6e6e6;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 476px;
+        width: 100%;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #151534;
+        outline: none;
+      }
+    }
+
+    .submit-button {
+      cursor: pointer;
+      background-color: #151534;
+      border: none;
+      color: #fff;
+      padding: 20px;
+      max-width: 475px;
+      width: 100%;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-size: 20px;
+      border-radius: 72px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: lighten(#151534, 10%);
+      }
+    }
+  }
+}

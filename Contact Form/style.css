@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9MIY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v30/u-4n0qyriQwlOrhSvowK_l52xwNpXw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  background-color: #f5f5fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px #cbcbf5;
+  max-width: 606px;
+  width: 100%;
+  margin: 40px auto;
+}
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    margin: 80px auto;
+  }
+}
+.form-container span {
+  float: right;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #6c6b8a;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+}
+.form-container span:hover {
+  color: #e53935;
+}
+.form-container h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  text-align: center;
+  color: #151534;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.form-container form {
+  padding: 15px 50px;
+}
+.form-container form .form-group {
+  margin-bottom: 35px;
+}
+.form-container form .form-group label {
+  display: block;
+  color: #a2a2d9;
+  font-size: 1.2rem;
+}
+.form-container form .form-group input,
+.form-container form .form-group select {
+  max-width: 418px;
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #eaeaf7;
+  outline: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #151534;
+}
+.form-container form .form-group textarea {
+  border: 2px solid #e6e6e6;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 476px;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #151534;
+  outline: none;
+}
+.form-container form .submit-button {
+  cursor: pointer;
+  background-color: #151534;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  max-width: 475px;
+  width: 100%;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 72px;
+  transition: 0.3s ease;
+}
+.form-container form .submit-button:hover {
+  background-color: #242458;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name">
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="text" id="full-name" name="full_name">
+          </div>
+      
+          <div class="form-group">
+            <select id="action" name="action" required>
+              <option value="post">I want to Post</option>
+              <option value="inquire">Inquire</option>
+              <option value="feedback">Give Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your message goes here..." required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit form</button>
+        </form>
+    </div>
+</body>
+</html>
