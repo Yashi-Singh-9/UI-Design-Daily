@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto', sans-serif
+  font-weight: 700
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  background-color: #F2F1FC
+  
+  @media(max-width: 630px)
+    height: auto
+  
+.modal
+  max-width: 603px
+  width: 100%
+  background-color: #fff
+  padding: 40px
+  border-radius: 10px
+  box-shadow: 0 4px 10px darken(#F2F1FC, 15%)
+  
+  @media(max-width: 630px)
+    margin: 40px auto
+    width: 90%
+  
+  .close
+    float: right
+    background-color: #F1F1FC
+    color: #797EA8
+    height: 46px
+    width: 46px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2rem
+    transition: all .3s ease
+    cursor: pointer
+    
+    &:hover
+      background-color: lighten(#D32F2F, 40%)
+      color: #D32F2F
+      border: 2px solid #D32F2F
+    
+  h2
+    font-size: 1.6rem
+    color: #17163C
+    text-align: center
+    margin: 80px auto 50px auto
+    max-width: 290px
+    width: 100%
+    line-height: 1.5
+    
+  .btn
+    display: flex
+    flex-direction: column
+    gap: 30px
+    max-width: 307px
+    width: 100%
+    margin: 0 auto
+    
+    .google-btn,
+    .facebook-btn,
+    .twitter-btn
+      padding: 30px
+      font-family: inherit
+      font-weight: inherit
+      font-size: 1rem
+      color: #fff
+      border: none
+      border-radius: 10px
+      cursor: pointer
+      transition: .3s ease
+      
+    .google-btn
+      background-color: #D14B3E
+      
+      &:hover
+        background-color: lighten(#D14B3E, 10%)
+      
+    .facebook-btn
+      background-color: #3D5A96
+      
+      &:hover
+        background-color: lighten(#3D5A96, 10%)
+      
+    .twitter-btn
+      background-color: #58ACEA
+      margin-bottom: 30px
+      
+      &:hover
+        background-color: darken(#58ACEA, 10%)
+      
+  .checkbox
+    display: flex
+    max-width: 343px
+    width: 100%
+    margin: 0 auto
+    
+    input
+      accent-color: #17163C
+      cursor: pointer
+      height: 25px
+      width: 25px
+      margin-right: 10px
+      
+    label      
+      color: #17163C
+      font-size: 1rem
+      font-weight: 500
