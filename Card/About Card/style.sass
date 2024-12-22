@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  font-weight: 500
+  font-size: 1.2rem
+  background-color: #F4F8FF
+  color: #111831
+  display: flex
+  justify-content: center
+  align-items: center
+  
+.about-container
+  background-color: #fff
+  box-shadow: 0 7px 26px lighten(#5C69E1, 10%)
+  padding: 3rem
+  border-radius: 1.4rem
+  max-width: 568px
+  width: 100%
+  margin: 50px auto
+  
+  @media(max-width: 620px)
+    width: 90%
+  
+  h2
+    font-size: 2rem
+    font-weight: 700
+    margin-bottom: 1rem
+  
+  .members
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+    
+    @media(max-width: 510px)
+      flex-direction: column
+      gap: 20px
+      align-items: flex-start
+    
+    span
+      font-size: 1.1rem
+      
+    .import-button
+      font-family: inherit
+      font-size: 1rem
+      border: 1px solid #BBC2FF
+      background: none
+      color: #5C69E1
+      border-radius: 4px
+      padding: 0.9rem 1.5rem
+      cursor: pointer
+      transition: 0.3s ease
+      
+      &:hover
+        background-color: #BBC2FF
+  
+  .search-bar    
+      position: relative
+      display: inline-block
+      width: 100%
+      margin-bottom: 1.5rem
+  
+      input
+        font-family: inherit
+        font-size: 1rem
+        padding: 20px 40px 20px 40px
+        border: 1px solid #B4BED0
+        border-radius: 8px
+        width: 100%
+        color: inherit
+        outline: none
+      
+      i
+        position: absolute
+        top: 50%
+        left: 10px 
+        transform: translateY(-50%)
+        color: #aaa
+        pointer-events: none
+        
+  .invitation-link
+    position: relative
+    display: inline-block
+    width: 100%
+    
+    span
+      margin-bottom: 0.5rem
+      display: block
+      
+    input
+      font-family: inherit
+      font-size: 1rem
+      padding: 20px 40px 20px 20px
+      border: 1px solid #B4BED0
+      border-radius: 8px
+      width: 100%
+      color: inherit
+      outline: none
+    
+    i
+      position: absolute
+      top: 65%
+      right: 20px 
+      transform: translateY(-50%)
+      cursor: pointer
+      
+  .suggested-members
+    margin-top: 2rem
+    
+    .member
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 1.5rem auto
+      
+      @media(max-width: 530px)
+        flex-direction: column
+        gap: 20px
+        align-items: flex-start
+      
+      div
+        display: flex
+        align-items: center
+        
+        img
+          width: 77px
+          height: 77px
+          border-radius: 50%
+          object-fit: cover
+          margin-right: 10px
+
+      .add-button
+        font-family: inherit
+        font-size: 1.1rem
+        padding: 0.9rem 1.5rem
+        border: none
+        background-color: #111831
+        color: #fff
+        border-radius: 4px
+        cursor: pointer
+        transition: 0.3s ease
+                
+        &:hover
+          background-color: lighten(#111831, 16%)
