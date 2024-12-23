@@ -32,7 +32,7 @@ footer {
 @media (max-width: 768px) {
   footer {
     margin: 100px auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
   }
 }
