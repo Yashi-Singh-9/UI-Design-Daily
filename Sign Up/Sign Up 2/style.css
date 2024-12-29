@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1F1C44 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.container {
+  max-width: 517px !important;
+  width: 100%;
+  font-family: "Rockwell", serif;
+  font-weight: 400;
+  margin: 30px auto;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90% !important;
+  }
+}
+.container .google-btn {
+  background-color: #5B86E6;
+  font-size: 1.12rem;
+  max-width: 380px;
+  width: 100%;
+  transition: 0.3s ease;
+  margin: 0 auto !important;
+  box-shadow: 0 6px 10px #87a7ed;
+}
+.container .google-btn:hover {
+  background-color: #2f65df;
+}
+.container .google-btn img {
+  width: 55px;
+  height: 55px;
+}
+.container .or-divider {
+  margin: 20px 0;
+  color: #949495;
+}
+.container .or-divider::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #949495;
+  margin: 0 5px;
+}
+.container .or-divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #949495;
+  margin: 0 5px;
+}
+.container form {
+  margin-top: -3.5rem;
+}
+.container form .form-group label {
+  font-size: 1.15rem;
+}
+.container form .form-group input {
+  font-family: "Mulish", sans-serif;
+  font-weight: inherit;
+  border: 1px solid #D9DCED;
+  color: #000;
+  outline: none;
+  font-size: 1rem;
+  max-width: 380px;
+  width: 100%;
+}
+.container form .get-started-btn {
+  margin: 0 auto;
+  background-color: #E65B7C;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 10px #f09db1;
+  max-width: 380px;
+  width: 100%;
+}
+.container form .get-started-btn:hover {
+  background-color: #e9718e;
+}
+.container p {
+  font-size: 1.1rem;
+}
+.container p a,
+.container p a:visited {
+  color: #5B86E6;
+}/*# sourceMappingURL=style.css.map */
