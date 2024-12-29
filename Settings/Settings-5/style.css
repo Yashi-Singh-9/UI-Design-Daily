@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Mulish:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F0F9 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.settings-container {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 8px 8px #cfccea;
+  max-width: 951px;
+  width: 100%;
+  margin: 30px auto;
+}
+@media (max-width: 1000px) {
+  .settings-container {
+    width: 90%;
+  }
+}
+.settings-container .header .back-arrow {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.settings-container .header .setting {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.settings-container .menu {
+  border-top: 2px solid #F0F0F9;
+}
+@media (max-width: 768px) {
+  .settings-container .menu {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+.settings-container .menu .menu-left {
+  flex: 1;
+  background-color: #F1F0F9;
+  max-width: 235px;
+  width: 100%;
+  height: 300px;
+}
+.settings-container .menu .menu-left span {
+  font-size: 1rem;
+  color: #0D0C2F;
+  cursor: pointer;
+}
+.settings-container .menu .menu-left span.active {
+  background-color: #fff !important;
+  border-radius: 10px;
+}
+.settings-container .menu .menu-right {
+  flex: 2;
+}
+.settings-container .menu .menu-right form .language-options h3 {
+  font-weight: 700;
+  max-width: 369px;
+  width: 100%;
+  font-size: 1.49rem;
+}
+.settings-container .menu .menu-right form .language-options label {
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+.settings-container .menu .menu-right form .language-options label input[type=radio] {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  accent-color: #000;
+  height: 26px;
+  width: 26px;
+  vertical-align: middle;
+}
+.settings-container .menu .menu-right form .show-more {
+  color: #8600EF;
+  font-size: 1rem;
+}
+.settings-container .menu .menu-right form .current-language {
+  border: 1px solid #C6C6DF;
+}
+.settings-container .menu .menu-right form .current-language input {
+  border: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.settings-container .menu .menu-right form .buttons .cancel {
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif !important;
+  font-weight: 700;
+}
+.settings-container .menu .menu-right form .buttons .save {
+  background-color: #8600EF;
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif !important;
+  font-weight: 700;
+}
+.settings-container .menu .menu-right form .buttons .save:hover {
+  background-color: #9e23ff;
+}/*# sourceMappingURL=style.css.map */
