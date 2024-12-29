@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body  
+  background-color: #EBF4FF !important
+  
+.chat-container  
+  font-family: 'Lato', sans-serif
+  font-weight: 400
+  font-size: 1.25rem
+  max-width: 455px
+  width: 100%
+  box-shadow: 0 8px 20px darken(#EBF4FF, 10%) 
+  margin: 100px auto
+  
+  @media(max-width: 510px)
+    width: 90%
+    
+  .header
+    .left
+      span:first-child
+        font-weight: 700
+        color: #344057
+        font-size: 1.625rem
+      
+      span:nth-child(2)
+        color: #878F9D
+      
+    .right
+      color: darken(#878F9D, 10%)
+      
+  input
+    font-family: inherit
+    font-weight: inherit
+    max-width: 394px
+    width: 100%
+    border: none
+    background-color: #DBE4EE
+    outline: none
+    color: #344057
+    
+  .contact-list
+    li
+      img
+        width: 79px
+        height: 79px
+      
+      span
+        font-size: 1.5rem
