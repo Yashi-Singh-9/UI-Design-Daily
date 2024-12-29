@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  background-color: #1C1A39 !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  body {
+    height: auto;
+  }
+}
+
+.store-container {
+  background-color: #121129 !important;
+  border-radius: 18px;
+  box-shadow: 0 4px 4px rgba(117, 107, 255, 0.5);
+  max-width: 431px;
+  width: 100%;
+}
+@media (max-width: 760px) {
+  .store-container {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 450px) {
+  .store-container {
+    width: 90%;
+  }
+}
+.store-container h2 {
+  font-size: 24px;
+  color: #C4C0FF;
+}
+.store-container label[for=text] {
+  color: #C4C0FF;
+  font-size: 12px;
+  font-weight: 700;
+}
+.store-container .location {
+  color: #756BFF;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .store-container .location {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.store-container .location input {
+  font-family: "Mulish", sans-serif;
+  border: 2px solid #2A2753;
+  color: #756BFF;
+  border-radius: 4px;
+  font-weight: 700;
+  outline: none;
+  max-width: 148px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+@media (max-width: 450px) {
+  .store-container .location input {
+    max-width: unset;
+  }
+}
+.store-container .location input:hover {
+  border-color: #756BFF;
+}
+.store-container .location input::-moz-placeholder {
+  color: #C4C0FF;
+}
+.store-container .location input::placeholder {
+  color: #C4C0FF;
+}
+.store-container .store {
+  color: #C4C0FF;
+}
+@media (max-width: 450px) {
+  .store-container .store div {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 10px;
+  }
+}
+.store-container .store div .name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #C4C0FF;
+}
+.store-container .store div .closed {
+  font-size: 12px !important;
+  background-color: #FF5EAB !important;
+  border-radius: 19px !important;
+  padding: 0.4rem !important;
+}
+.store-container .store .address {
+  font-size: 18px;
+}
+.store-container .store .open {
+  font-size: 12px;
+  background-color: #00BD9B;
+  border-radius: 19px;
+  padding: 0.4rem;
+}
+.store-container button {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #756BFF;
+  max-width: 371px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.store-container button:hover {
+  background-color: #a59eff;
+}/*# sourceMappingURL=style.css.map */
