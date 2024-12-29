@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #F3F8FE !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1C2B62;
+}
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+}
+
+.profile-card {
+  box-shadow: 0 10px #E6EFFA;
+  padding: 40px;
+  max-width: 562px;
+  width: 100%;
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+  }
+}
+.profile-card .image {
+  flex: 1;
+}
+.profile-card .image img {
+  width: 114px;
+  height: 114px;
+}
+.profile-card .card {
+  border: none;
+  padding-top: 20px;
+}
+.profile-card .card h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.profile-card .card .passion {
+  margin-bottom: 20px;
+}
+.profile-card .card .stats i {
+  margin-right: 5px;
+}
+.profile-card .card p {
+  font-size: 1.12rem;
+  max-width: 320px;
+  width: 100%;
+}
+.profile-card .card .show-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 2px solid #C4CADF;
+  color: #1C2B62;
+  max-width: 111px;
+  width: 100%;
+  background: none;
+  transition: 0.3s ease;
+}
+.profile-card .card .show-btn:hover {
+  background-color: #C4CADF;
+}/*# sourceMappingURL=style.css.map */
