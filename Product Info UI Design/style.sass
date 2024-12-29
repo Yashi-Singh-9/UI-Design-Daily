@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Poppins:wght@400,500;600;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  font-weight: 400
+  background-color: #EEF2F9 !important
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  
+  @media(max-width: 768px)
+    height: auto
+    
+.product-card  
+  max-width: 887px
+  width: 100%
+  box-shadow: 0 10px 10px darken(#EEF2F9, 10%)
+  gap: 20px
+  
+  @media(max-width: 930px)
+    width: 95% 
+    
+  @media(max-width: 768px)
+    margin: 50px auto
+    
+  @media(max-width: 650px)
+    flex-direction: column
+    
+  img    
+    max-width: 249px
+    width: 100%
+    height: 223px
+    
+    @media(max-width: 650px)
+      margin: 0 auto
+    
+  .product-info
+    flex: 2
+    
+    .badge
+      background-color: #191847
+      font-weight: 600
+      font-size: 0.8rem
+      
+    .title
+      font-size: 1.8rem
+      color: #191847
+      max-width: 419px
+      width: 100%
+      
+    .price
+      text-decoration: line-through
+      color: #191847
+      font-size: 1.12rem
+      font-family: 'Roboto', sans-serif
+    
+    .final-price
+      font-weight: bold
+      font-size: 2.8rem
+      
+    .description
+      color: #86869F
+      font-size: 1rem
+      
+    .btn
+       font-family: 'Poppins', sans-serif
+       font-weight: 500
+       font-size: 1.12rem
+       background-color: #4788E9
+       box-shadow: 0 5px darken(#4788E9, 20%)
+       max-width: 442px 
+       width: 100%
+       padding: 14px
+       transition: all 0.3s ease
+      
+       @media(max-width: 650px)
+        max-width: unset
+      
+       &:hover
+        background-color: darken(#4788E9, 10%)
+        box-shadow: 0 5px darken(#4788E9, 50%)
+      
+    .stock
+      i
+        color: #00D98B
+        height: 13px
+        width: 13px
+        margin-right: 8px
+        
+      .pcs  
+        font-weight: 500
+        font-size: 14px
+        
+    .cart-btn    
+      @media(max-width: 768px)
+        display: flex
+        flex-direction: column
+        
+      button
+        font-family: 'Poppins', sans-serif
+        font-weight: 500
+        padding: 10px
+        border: 2px solid #C9C9DA
+        max-width: 213px
+        width: 100%
+        color: #191847
+        transition: all 0.3s ease
+        
+        @media(max-width: 768px)
+          max-width: unset
+        
+        &:hover
+          color: #fff
+          border-color: #191847
+          background-color: lighten(#191847, 30%) !important
+        
+        i
+          margin-right: 5px
