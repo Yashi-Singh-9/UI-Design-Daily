@@ -63,47 +63,23 @@ body {
 .settings-container .menu .menu-right {
   flex: 2;
 }
-.settings-container .menu .menu-right form .language-options h3,
-.settings-container .menu .menu-right form .search-result h3,
-.settings-container .menu .menu-right form .theme-selection h3,
-.settings-container .menu .menu-right form .help h3 {
+.settings-container .menu .menu-right form .language-options h3 {
   font-weight: 700;
-  max-width: 450px;
+  max-width: 369px;
   width: 100%;
   font-size: 1.49rem;
 }
-.settings-container .menu .menu-right form .language-options label,
-.settings-container .menu .menu-right form .search-result label,
-.settings-container .menu .menu-right form .theme-selection label,
-.settings-container .menu .menu-right form .help label {
+.settings-container .menu .menu-right form .language-options label {
   font-size: 1.125rem;
   cursor: pointer;
 }
-.settings-container .menu .menu-right form .language-options label input[type=radio],
-.settings-container .menu .menu-right form .search-result label input[type=radio],
-.settings-container .menu .menu-right form .theme-selection label input[type=radio],
-.settings-container .menu .menu-right form .help label input[type=radio] {
+.settings-container .menu .menu-right form .language-options label input[type=radio] {
   font-family: "Mulish", sans-serif;
   font-weight: 600;
   accent-color: #000;
   height: 26px;
   width: 26px;
   vertical-align: middle;
-}
-.settings-container .menu .menu-right form .language-options label select,
-.settings-container .menu .menu-right form .search-result label select,
-.settings-container .menu .menu-right form .theme-selection label select,
-.settings-container .menu .menu-right form .help label select {
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-}
-.settings-container .menu .menu-right form .language-options label select:hover,
-.settings-container .menu .menu-right form .search-result label select:hover,
-.settings-container .menu .menu-right form .theme-selection label select:hover,
-.settings-container .menu .menu-right form .help label select:hover {
-  background-color: white;
-  border-color: #a5a5cd;
 }
 .settings-container .menu .menu-right form .show-more {
   color: #8600EF;
