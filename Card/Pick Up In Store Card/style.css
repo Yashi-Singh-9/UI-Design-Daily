@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mulish/v13/1Ptyg83HX_SGhgqO0yLcmjzUAuWexZNRwaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mulish/v13/1Ptyg83HX_SGhgqO0yLcmjzUAuWexU1WwaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mulish/v13/1Ptyg83HX_SGhgqO0yLcmjzUAuWexXRWwaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mulish/v13/1Ptyg83HX_SGhgqO0yLcmjzUAuWexTpWwaA.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f6ff !important;
+}
+main {
+  font-family: "Mulish", sans-serif;
+  max-width: 483px;
+  width: 100%;
+  margin: 5rem auto;
+  box-shadow: -15px -15px #4471f5;
+}
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+}
+main .container h4 {
+  color: #172039;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .container .stars i {
+  color: #f8ab18;
+}
+main .container .stars p {
+  font-weight: 900;
+  color: #172039;
+  font-weight: 1rem;
+}
+main .container .stars p a,
+main .container .stars p a:visited {
+  color: #747988;
+  font-weight: 600;
+}
+main .container h2 {
+  color: #172039;
+  font-weight: 900;
+}
+main .container .button {
+  background-color: #f5f6ff;
+  font-weight: 600;
+}
+@media (max-width: 520px) {
+  main .container .button {
+    flex-direction: column;
+  }
+}
+main .container .button button {
+  border: none;
+}
+main .container .button .deliver {
+  color: #747988;
+}
+main .container .button .pick-up {
+  color: #172039;
+}
+main .container .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .container .input i {
+  position: absolute;
+  left: 15px;
+  color: #747988;
+}
+main .container .input input[type="text"] {
+  max-width: 785px;
+  width: 100%;
+  border: 1px solid #d7d9e8;
+  color: #172039;
+  outline: none;
+  padding: 1rem 1rem 1rem 2.2rem !important;
+}
+main .container .input input[type="text"]::placeholder {
+  color: #172039;
+}
+main .container .defualt-address {
+  border: 1px solid #d7d9e8;
+}
+main .container .defualt-address p {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+main .container .defualt-address p span {
+  font-weight: 400;
+}
+main .container .defualt-address .pick {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .container .defualt-address .opening {
+  color: #747988;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+main .container .defualt-address .cart-btn {
+  background-color: #4571f5;
+  max-width: 337px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+main .container .defualt-address .cart-btn:hover {
+  background-color: #154cf2;
+}
+main .container .description {
+  color: #747988;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
