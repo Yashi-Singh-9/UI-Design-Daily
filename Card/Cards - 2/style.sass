@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: #DFE2FF !important
+  font-family: 'Poppins', sans-serif
+  font-weight: 500
+  
+main
+  margin: 6rem auto
+  
+  .user-info
+    max-width: 497px
+    width: 100%
+    
+    @media(max-width: 550px)
+      width: 90%
+    
+    .info
+      img
+        width: 100px
+        height: 100px
+      
+      div  
+      .name
+        font-family: 'Merriweather', serif
+        font-weight: 900
+        font-size: 1.5rem
+        color: #291F68
+        
+    .btn
+      button
+        font-family: 'Poppins', sans-serif
+        font-weight: 500
+        font-size: 1.125rem
+        
+        &:first-child
+          background-color: #291F68
+        
+        &:nth-child(2)
+          color: #291F68 !important
+          border: 2px solid #291F68 !important
+        
+  .social-links
+    max-width: 344px
+    width: 100%
+    height: 263px
+    margin-top: 5rem
+    
+    @media(max-width: 550px)
+      width: 90%
+      
+    @media(max-width: 320px)
+      height: auto
+    
+    h3
+      color: #291F68
+      font-family: 'Merriweather', serif
+      font-weight: 900
+      
+    .links
+      div
+        color: #291F68
+        font-size: 1rem
+        font-family: 'Poppins', sans-serif
+        font-weight: 500
+        
+    .publish
+      color: 0.875rem
+      color: #291F68
