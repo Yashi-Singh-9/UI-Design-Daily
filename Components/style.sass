@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-sizing
+
+body
+  background-color: #F4F6FC !important
+  
+main
+  font-family: 'Noto Sans', sans-serif
+  font-weight: 400
+  margin: 10rem 15rem
+  
+  .btns
+    @media(max-width: 670px)
+      flex-direction: column
+      
+    button
+      max-width: 125px
+      width: 100%
+      font-weight: 600
+      font-size: 1rem
+      
+      @media(max-width: 670px)
+        max-width: unset
+      
+      &.begin
+        background-color: #2C3E50
+    
+      &.cancel
+        color: #2C3E50
+        border: 2px solid #2C3E50
+  
+  .header
+    span
+      color: #5E748E
+      font-size: 1rem
+      
+      &.active
+        color: #000
+        background-color: #fff
+        
+  .form-group
+    .group
+      max-width: 435px !important
+      width: 90%
+      
+      @media(max-width: 670px)
+        flex-direction: column
+        gap: 1rem
+      
+      label
+        font-size: 1rem
+        font-weight: 700
+        
+      span
+        font-size: 0.875rem
+        color: #5E748E
+        
+    input
+      max-width: 435px
+      width: 100%
+      border: 1px solid #CFD8F4
+      outline: none
+      
+    .error-message
+      color: #F84C94
+      font-size: 0.875rem
+      
+  .dropdown
+    .dropdown-toggle
+      max-width: 160px !important
+      width: 100%
+      color: #2C3E50
+      border: 1px solid #2C3E50
+      
+    .dropdown-menu
+      background-color: #2C3E50
+      cursor: pointer
+      max-width: 203px
+      width: 100%
+      
+      .dropdown-item        
+        &:hover
+          background-color: #394E64
+          max-width: 163px
+          width: 100%
