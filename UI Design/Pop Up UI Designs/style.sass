@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap")
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  background-color: #f5f5f5 !important
+  
+main
+  margin: 8rem auto
+  
+  @media(max-width: 920px)
+    flex-direction: column
+    align-items: center
+  
+  .cookie,
+  .log-out
+    max-width: 432px
+    width: 100%
+    
+    @media(max-width: 500px)
+      width: 90%
+      
+    .fa-xmark
+      cursor: pointer
+      transition: 0.3s ease
+      color: #2C3E50 !important
+      
+      &:hover
+        color: #DC3545 !important
+    
+    .fa-cookie-bite
+      color: darken(#C6E0FF, 30%)
+      
+    .fa-triangle-exclamation  
+      color: #FF7474
+      
+    p
+      max-width: 327px
+      width: 100%
+      
+    .log-out
+      max-width: 203px
+      width: 100%
+      margin: 0 auto
+    
+    button
+      max-width: 201px
+      width: 100%
+      margin: 0 auto
+      background-color: #ED6755
+      transition: 0.3s ease
+      box-shadow: 0 8px 8px lighten(#ED6755, 10%)
+      
+      &:hover
+        background-color: darken(#ED6755, 10%)
+    
+    .login
+      background-color: #1C1B5E
+      box-shadow: 0 8px 18px lighten(#1C1B5E, 10%)
+      
+      &:hover
+        background-color: lighten(#1C1B5E, 10%)
+      
+  .log-out
+    @media(max-width: 900px)
+      margin-left: 3rem
