@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F8FF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  background-color: #FFFFFF;
+  max-width: 548px;
+  width: 100%;
+  border-radius: 16px;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+main h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #161842;
+  margin-bottom: 1.2rem;
+}
+main input {
+  padding: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  outline: none;
+  background-color: #F8F8FF;
+  border: 1px solid #DADCF5;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  max-width: 484px;
+  width: 100%;
+}
+main .btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+main .btn button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+main .btn button.cancel {
+  background-color: #fff;
+  border: 1px solid #DADCF5;
+}
+main .btn button.cancel:hover {
+  background-color: #DADCF5;
+}
+main .btn button.add {
+  background-color: #7758CE;
+  border: 1px solid #7758CE;
+  color: #fff;
+}
+main .btn button.add:hover {
+  background-color: #5a37bc;
+}/*# sourceMappingURL=style.css.map */
