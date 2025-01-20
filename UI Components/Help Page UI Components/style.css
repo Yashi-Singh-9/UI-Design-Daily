@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e9eefd !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+main {
+  margin: 7rem 10rem;
+}
+main .contact {
+  max-width: 482px;
+  width: 100%;
+  color: #213264;
+}
+main .contact h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.625rem;
+}
+main .contact p {
+  max-width: 392px;
+  width: 100%;
+}
+main .contact button {
+  margin: 0 auto;
+  max-width: 162px;
+  width: 100%;
+  background-color: #213264;
+  transition: 0.2s ease;
+}
+main .contact button:hover {
+  background-color: #2e458a;
+}
+main .dropdown .btn {
+  border: 2px solid #668bfa;
+}
+main .dropdown .dropdown-menu {
+  border: none;
+  margin-top: 0.5rem;
+}
+main .dropdown .dropdown-menu li {
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+main .dropdown .dropdown-menu li:hover {
+  background-color: #e9eefd;
+}
