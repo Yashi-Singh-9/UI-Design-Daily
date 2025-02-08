@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eceef5 !important;
+}
+main {
+  max-width: 130px;
+  width: 100%;
+  margin: 10em auto;
+  background-color: #101245;
+}
+main .icon {
+  background-color: #282a58;
+  color: #b6b8f0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+main .icon i {
+  font-size: 2rem;
+}
+main .icon.selected {
+  background-color: #ff7aaa;
+  color: #101245;
+}
