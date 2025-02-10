@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom right, #f3f7ff, #fee2f6) !important;
+  height: 100vh;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.125rem !important;
+}
+main {
+  margin: 8rem auto;
+  background-color: #f1e2f5;
+  border: 12px solid #fff;
+  max-width: 531px;
+  width: 100%;
+}
+main h5 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a2653;
+}
+main .category span {
+  cursor: pointer;
+  color: #1a2653;
+  transition: 0.2s ease;
+}
+main .category span:hover {
+  background-color: #fff;
+  border-radius: 16px;
+}
+main .category span.selected {
+  background-color: #fff;
+  border-radius: 16px;
+}
